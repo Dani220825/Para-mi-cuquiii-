@@ -1,1 +1,68 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #FFF5E1;
+    font-family: Arial, sans-serif;
+}
 
+#scene {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* GIRASOL */
+.sunflower {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #FFD84D 30%, #E0A800 100%);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+/* SUelo */
+#ground {
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 80px;
+    background: #5A3A1B;
+    transition: width 1.5s ease;
+}
+
+/* ÁRBOL */
+#tree {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    width: 4px;
+    height: 0;
+    background: #5A3A1B;
+    transform-origin: bottom;
+}
+
+/* TEXTO */
+#message {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    color: #333;
+    font-size: 18px;
+    white-space: pre-line;
+}
+
+/* CONTADOR */
+#counterBox {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #3b2a1a;
+}
